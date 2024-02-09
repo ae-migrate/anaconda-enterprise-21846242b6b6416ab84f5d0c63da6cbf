@@ -1,0 +1,25 @@
+name: Glaciers
+description: Glaciers explorer using Datashader and Panel
+
+commands:
+  dashboard:
+    unix: panel serve glaciers.ipynb
+    supports_http_options: true
+  notebook:
+    notebook: glaciers.ipynb
+
+packages:
+  - python=3.11
+  - bokeh
+  - notebook
+  - pyviz_comms
+  - datashader
+  - holoviews
+  - panel
+  - spatialpandas
+
+platforms:
+  - linux-64
+
+env_specs:
+  anaconda3_202309_py311: {}
